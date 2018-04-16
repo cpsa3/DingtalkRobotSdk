@@ -7,12 +7,13 @@
     <Product>SchoolPal.DingtalkRobotSdk</Product>
     <Authors>XiaoBao Online Ltd.</Authors>
     <Company>XiaoBao Online Ltd.</Company>
-    <PackageLicenseUrl>http://git.greedyint.com/schoolpal/xiaobao</PackageLicenseUrl>
-    <PackageProjectUrl>http://git.greedyint.com/schoolpal/xiaobao</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/cpsa3/DingtalkRobotSdk</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/cpsa3/DingtalkRobotSdk</PackageProjectUrl>
     <PackageIconUrl>http://nuget.xiaobao100.cn/Resources/xiaobao.ico</PackageIconUrl>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageOutputPath>.\</PackageOutputPath>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>SchoolPal.DingtalkRobotSdk</PackageId>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net45|AnyCPU'">
