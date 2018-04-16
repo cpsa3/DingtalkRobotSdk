@@ -10,7 +10,7 @@ namespace DingtalkRobotSdk.Test
     [TestClass]
     public class UnitTest
     {
-        private const string webHookUrl = "https://oapi.dingtalk.com/robot/send?access_token=71f63bbe2968da5ee7ae946030341a591b445340d283e2b60e6055bbbff05e93";
+        private const string webHookUrl = "https://oapi.dingtalk.com/robot/send?access_token=f3a458b219c7d4792507ba0a0a8cb2be84a8143b5c69c406548bfe6b439c8031";
 
         [TestMethod]
         public void Test()
@@ -156,23 +156,6 @@ Apple Store 的设计正从原来满满的科技感走向生活化，而其生�
             };
 
             DingtalkClient.SendMessageAsync(webHookUrl, message).Wait();
-        }
-
-        [TestMethod]
-        public void FetchWebapgeTest()
-        {
-            var now = DateTime.Now;
-            //const string url = "https://www.maccosmetics.com/esearch?form_id=perlgem_search_form&search=lunar";
-            const string url2 = "https://www.maccosmetics.com/product/13854/55720/products/makeup/lips/lipstick/lipstick-lunar-new-year#/shade/To_Luck%21";
-            var result = DingtalkClient.GetAsync(url2).Result;
-            var pattern = "CAT13854PROD55720SKU89512(.*)isOrderable(.*)\"SHADENAME\":\"To Luck!\"";
-
-
-            var x = Regex.Matches(result, pattern)[0].Value;
-            var y = x.Substring(x.IndexOf("\"isOrderable\":"), 15);
-            var z = y.Replace("\"isOrderable\":", string.Empty);
-
-            Assert.AreEqual(z, "0");
         }
     }
 }

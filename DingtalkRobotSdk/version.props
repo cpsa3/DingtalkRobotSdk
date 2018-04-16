@@ -1,0 +1,14 @@
+﻿<Project>
+  <PropertyGroup>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <!--Alpha：内部开发使用-->
+    <!--Beta：前后端或与他人联调使用-->
+    <!--RC：测试环境使用-->
+    <!--Release：正式环境使用，测试迭代完成后发布-->
+    <VersionSuffix>Release</VersionSuffix>
+    <BuildNumber>01</BuildNumber>
+    <VersionSuffix Condition="'$(VersionSuffix)' != 'Release' And '$(BuildNumber)' != ''">$(VersionSuffix)-$(BuildNumber)</VersionSuffix>
+    <PackageVersion Condition="'$(VersionSuffix)' == 'Release'">$(VersionPrefix)</PackageVersion>
+    <PackageVersion Condition="'$(VersionSuffix)' != 'Release'">$(VersionPrefix)-$(VersionSuffix)</PackageVersion>
+  </PropertyGroup>
+</Project>
