@@ -1,11 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27004.2008
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30711.63
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DingtalkRobotSdk", "DingtalkRobotSdk\DingtalkRobotSdk.csproj", "{6A13B5A9-DE71-4A00-97C8-345EB60BA1A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DingtalkRobotSdk", "DingtalkRobotSdk\DingtalkRobotSdk.csproj", "{6A13B5A9-DE71-4A00-97C8-345EB60BA1A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DingtalkRobotSdk.Test", "DingtalkRobotSdk.Test\DingtalkRobotSdk.Test.csproj", "{6BBFF331-6E49-44D2-A69B-9416D1198BB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GitlabWebhook.API", "GitlabWebhook.API\GitlabWebhook.API.csproj", "{7EA85F31-9C30-473E-8E81-0C369F610628}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DingtalkRobotSdk.Tests", "DingtalkRobotSdk.Tests\DingtalkRobotSdk.Tests.csproj", "{7B792018-CE1A-4A37-92E2-3EA0F4CED819}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{F380982C-DBD0-47D4-8499-F86841E6B02D}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		Directory.Build.props = Directory.Build.props
+		NuGet.config = NuGet.config
+		eng\versions.props = eng\versions.props
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +27,14 @@ Global
 		{6A13B5A9-DE71-4A00-97C8-345EB60BA1A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A13B5A9-DE71-4A00-97C8-345EB60BA1A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A13B5A9-DE71-4A00-97C8-345EB60BA1A8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6BBFF331-6E49-44D2-A69B-9416D1198BB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6BBFF331-6E49-44D2-A69B-9416D1198BB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6BBFF331-6E49-44D2-A69B-9416D1198BB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6BBFF331-6E49-44D2-A69B-9416D1198BB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EA85F31-9C30-473E-8E81-0C369F610628}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EA85F31-9C30-473E-8E81-0C369F610628}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EA85F31-9C30-473E-8E81-0C369F610628}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EA85F31-9C30-473E-8E81-0C369F610628}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B792018-CE1A-4A37-92E2-3EA0F4CED819}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B792018-CE1A-4A37-92E2-3EA0F4CED819}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B792018-CE1A-4A37-92E2-3EA0F4CED819}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B792018-CE1A-4A37-92E2-3EA0F4CED819}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
